@@ -1,0 +1,1213 @@
+[
+  {
+    "id": "gpu_rtx_5090_fe",
+    "category": "gpu",
+    "brand": "NVIDIA",
+    "model": "RTX 5090 Founders Edition",
+    "price_usd": 2199.99,
+    "release_date": "2025-03-14",
+    "image_path": "gpu/5090_fe.png",
+    "amazon_asin": "B0FFPJ7THP",
+    "spec": {
+      "vram_gb": 32,
+      "pcie_gen": "5.0 x16",
+      "boost_clock": "2850 MHz",
+      "tdp_w": 475,
+      "length_mm": 340,
+      "width_slots": 3
+    },
+    "benchmarks": [
+      {
+        "title": "Cyberpunk 2077 RT Overdrive",
+        "fps": {
+          "1080": 212,
+          "1440": 176,
+          "4k": 111
+        }
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2025-03-15",
+        "price": 2199.99
+      }
+    ]
+  },
+  {
+    "id": "gpu_rtx_5090_msi_suprimx",
+    "category": "gpu",
+    "brand": "MSI",
+    "model": "RTX 5090 Suprim X",
+    "price_usd": 2299.99,
+    "release_date": "2025-03-14",
+    "image_path": "gpu/5090_suprimx.png",
+    "amazon_asin": "B0C5090MSI2",
+    "spec": {
+      "vram_gb": 32,
+      "pcie_gen": "5.0 x16",
+      "boost_clock": "2900 MHz",
+      "tdp_w": 500,
+      "length_mm": 350,
+      "width_slots": 3.5
+    },
+    "benchmarks": [
+      {
+        "title": "Fortnite Epic",
+        "fps": {
+          "1080": 540,
+          "1440": 440,
+          "4k": 300
+        }
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2025-03-15",
+        "price": 2299.99
+      }
+    ]
+  },
+  {
+    "id": "gpu_rtx_5080_asus_strix",
+    "category": "gpu",
+    "brand": "ASUS",
+    "model": "ROG Strix RTX 5080",
+    "price_usd": 1599.99,
+    "release_date": "2025-03-14",
+    "image_path": "gpu/5080_strix.png",
+    "amazon_asin": "B0C5080ASUS",
+    "spec": {
+      "vram_gb": 20,
+      "pcie_gen": "5.0 x16",
+      "boost_clock": "2700 MHz",
+      "tdp_w": 350,
+      "length_mm": 337,
+      "width_slots": 3
+    },
+    "benchmarks": [
+      {
+        "title": "Baldur's Gate 3 Ultra",
+        "fps": {
+          "1080": 330,
+          "1440": 260,
+          "4k": 165
+        }
+      }
+    ],
+    "price_history": [
+      {
+        "date": "2025-03-15",
+        "price": 1599.99
+      }
+    ]
+  },
+  {
+    "id": "gpu_rtx_5080_gigabyte_gaming_oc",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RTX 5080 Gaming OC",
+    "price_usd": 1499.99,
+    "release_date": "2025-03-14",
+    "image_path": "gpu/5080_gaming_oc.png",
+    "amazon_asin": "B0C5080GIGA",
+    "spec": {
+      "vram_gb": 20,
+      "pcie_gen": "5.0 x16",
+      "boost_clock": "2670 MHz",
+      "tdp_w": 340,
+      "length_mm": 332,
+      "width_slots": 3
+    }
+  },
+  {
+    "id": "gpu_rtx_4090_asus_strix",
+    "category": "gpu",
+    "brand": "ASUS",
+    "model": "ROG Strix RTX 4090 OC",
+    "price_usd": 1999.99,
+    "release_date": "2022-10-12",
+    "image_path": "gpu/4090_strix.png",
+    "amazon_asin": "B0BL3PFWJ1",
+    "spec": {
+      "vram_gb": 24,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2640 MHz",
+      "tdp_w": 450,
+      "length_mm": 357,
+      "width_slots": 3.5
+    },
+    "benchmarks": [
+      {
+        "title": "Cyberpunk 2077 RT Ultra",
+        "fps": {
+          "1080": 190,
+          "1440": 155,
+          "4k": 96
+        }
+      }
+    ]
+  },
+  {
+    "id": "gpu_rtx_4090_msi_suprimx",
+    "category": "gpu",
+    "brand": "MSI",
+    "model": "RTX 4090 Suprim X",
+    "price_usd": 1949.99,
+    "release_date": "2022-10-12",
+    "image_path": "gpu/4090_suprimx.png",
+    "amazon_asin": "B0BLKSMNNN",
+    "spec": {
+      "vram_gb": 24,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2625 MHz",
+      "tdp_w": 480,
+      "length_mm": 336,
+      "width_slots": 3.5
+    }
+  },
+  {
+    "id": "gpu_rtx_4080super_gigabyte_gaming_oc",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RTX 4080 SUPER Gaming OC",
+    "price_usd": 1099.00,
+    "release_date": "2024-01-31",
+    "image_path": "gpu/4080super_gaming_oc.png",
+    "amazon_asin": "B0CT3YZB49",
+    "spec": {
+      "vram_gb": 16,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2595 MHz",
+      "tdp_w": 320,
+      "length_mm": 342,
+      "width_slots": 3
+    }
+  },
+  {
+    "id": "gpu_rtx_4080super_asus_tuf",
+    "category": "gpu",
+    "brand": "ASUS",
+    "model": "TUF Gaming RTX 4080 SUPER",
+    "price_usd": 1149.00,
+    "release_date": "2024-01-31",
+    "image_path": "gpu/4080super_tuf.png",
+    "amazon_asin": "B0CT4ZZTUF",
+    "spec": {
+      "vram_gb": 16,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2610 MHz",
+      "tdp_w": 340,
+      "length_mm": 348,
+      "width_slots": 3.2
+    }
+  },
+  {
+    "id": "gpu_rtx_4070ti_super_msi_gamingx",
+    "category": "gpu",
+    "brand": "MSI",
+    "model": "RTX 4070 Ti SUPER Gaming X",
+    "price_usd": 799.99,
+    "release_date": "2024-01-24",
+    "image_path": "gpu/4070tis_msi.png",
+    "amazon_asin": "B0CS4070TIS",
+    "spec": {
+      "vram_gb": 16,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2790 MHz",
+      "tdp_w": 285,
+      "length_mm": 338,
+      "width_slots": 3
+    }
+  },
+  {
+    "id": "gpu_rtx_4070ti_super_gigabyte_aero",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RTX 4070 Ti SUPER AERO",
+    "price_usd": 779.99,
+    "release_date": "2024-01-24",
+    "image_path": "gpu/4070tis_aero.png",
+    "amazon_asin": "B0CS4070AERO",
+    "spec": {
+      "vram_gb": 16,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2760 MHz",
+      "tdp_w": 285,
+      "length_mm": 338,
+      "width_slots": 3
+    }
+  },
+  {
+    "id": "gpu_rtx_4070super_asus_dual",
+    "category": "gpu",
+    "brand": "ASUS",
+    "model": "Dual RTX 4070 SUPER",
+    "price_usd": 599.99,
+    "release_date": "2024-01-17",
+    "image_path": "gpu/4070super_dual.png",
+    "amazon_asin": "B0CR4070SAS",
+    "spec": {
+      "vram_gb": 12,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2490 MHz",
+      "tdp_w": 220,
+      "length_mm": 267,
+      "width_slots": 2.5
+    }
+  },
+  {
+    "id": "gpu_rtx_4060ti_msi_ventus_16gb",
+    "category": "gpu",
+    "brand": "MSI",
+    "model": "RTX 4060 Ti Ventus 3X",
+    "price_usd": 399.99,
+    "release_date": "2023-05-24",
+    "image_path": "gpu/4060ti_ventus.png",
+    "amazon_asin": "B0C4060TIV",
+    "spec": {
+      "vram_gb": 8,
+      "pcie_gen": "4.0 x8",
+      "boost_clock": "2535 MHz",
+      "tdp_w": 160,
+      "length_mm": 308,
+      "width_slots": 2
+    }
+  },
+  {
+    "id": "gpu_rtx_4060_gigabyte_eagle",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RTX 4060 Eagle OC",
+    "price_usd": 299.99,
+    "release_date": "2023-06-29",
+    "image_path": "gpu/4060_eagle.png",
+    "amazon_asin": "B0C4060EAG",
+    "spec": {
+      "vram_gb": 8,
+      "pcie_gen": "4.0 x8",
+      "boost_clock": "2475 MHz",
+      "tdp_w": 115,
+      "length_mm": 272,
+      "width_slots": 2
+    }
+  },
+  {
+    "id": "gpu_rtx_3090ti_evga_ftw3",
+    "category": "gpu",
+    "brand": "EVGA",
+    "model": "RTX 3090 Ti FTW3 Ultra",
+    "price_usd": 1899.99,
+    "release_date": "2022-03-29",
+    "image_path": "gpu/3090ti_ftw3.png",
+    "amazon_asin": "B09WCVHYJZ",
+    "spec": {
+      "vram_gb": 24,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "1920 MHz",
+      "tdp_w": 450,
+      "length_mm": 300,
+      "width_slots": 3
+    }
+  },
+  {
+    "id": "gpu_rtx_3080ti_msi_suprimx",
+    "category": "gpu",
+    "brand": "MSI",
+    "model": "RTX 3080 Ti Suprim X",
+    "price_usd": 1099.99,
+    "release_date": "2021-06-03",
+    "image_path": "gpu/3080ti_suprimx.png",
+    "amazon_asin": "B096GVN1S5",
+    "spec": {
+      "vram_gb": 12,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "1830 MHz",
+      "tdp_w": 350,
+      "length_mm": 338,
+      "width_slots": 2.75
+    }
+  },
+  {
+    "id": "gpu_rtx_3080_gigabyte_eagle",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RTX 3080 10 GB Eagle",
+    "price_usd": 699.99,
+    "release_date": "2020-09-17",
+    "image_path": "gpu/3080_eagle.png",
+    "amazon_asin": "B08HR6F5SY",
+    "spec": {
+      "vram_gb": 10,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "1755 MHz",
+      "tdp_w": 320,
+      "length_mm": 320,
+      "width_slots": 2.5
+    }
+  },
+  {
+    "id": "gpu_rtx_3070ti_asus_tuf",
+    "category": "gpu",
+    "brand": "ASUS",
+    "model": "TUF Gaming RTX 3070 Ti",
+    "price_usd": 599.99,
+    "release_date": "2021-06-10",
+    "image_path": "gpu/3070ti_tuf.png",
+    "amazon_asin": "B096YZLMRK",
+    "spec": {
+      "vram_gb": 8,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "1800 MHz",
+      "tdp_w": 290,
+      "length_mm": 300,
+      "width_slots": 2.7
+    }
+  },
+  {
+    "id": "gpu_rtx_3070_gigabyte_eagle",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RTX 3070 Eagle",
+    "price_usd": 479.99,
+    "release_date": "2020-10-29",
+    "image_path": "gpu/3070_eagle.png",
+    "amazon_asin": "B08KY266MG",
+    "spec": {
+      "vram_gb": 8,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "1725 MHz",
+      "tdp_w": 220,
+      "length_mm": 282,
+      "width_slots": 2
+    }
+  },
+  {
+    "id": "gpu_rtx_3060ti_msi_ventus",
+    "category": "gpu",
+    "brand": "MSI",
+    "model": "RTX 3060 Ti Ventus 3X",
+    "price_usd": 399.99,
+    "release_date": "2020-12-02",
+    "image_path": "gpu/3060ti_ventus.png",
+    "amazon_asin": "B08X4VCLL4",
+    "spec": {
+      "vram_gb": 8,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "1695 MHz",
+      "tdp_w": 200,
+      "length_mm": 316,
+      "width_slots": 2.7
+    }
+  },
+  {
+    "id": "gpu_rtx_3060_gigabyte_eagle",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RTX 3060 12 GB Eagle",
+    "price_usd": 339.99,
+    "release_date": "2021-02-25",
+    "image_path": "gpu/3060_eagle.png",
+    "amazon_asin": "B08WBB6PQ8",
+    "spec": {
+      "vram_gb": 12,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "1807 MHz",
+      "tdp_w": 170,
+      "length_mm": 242,
+      "width_slots": 2
+    }
+  },
+  {
+    "id": "gpu_rtx_3050_asus_dual",
+    "category": "gpu",
+    "brand": "ASUS",
+    "model": "Dual RTX 3050 8 GB",
+    "price_usd": 249.99,
+    "release_date": "2022-01-27",
+    "image_path": "gpu/3050_dual.png",
+    "amazon_asin": "B09RDR8X6T",
+    "spec": {
+      "vram_gb": 8,
+      "pcie_gen": "4.0 x8",
+      "boost_clock": "1807 MHz",
+      "tdp_w": 130,
+      "length_mm": 200,
+      "width_slots": 2
+    }
+  },
+  {
+    "id": "gpu_rtx_3050_gigabyte_gaming",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RTX 3050 Gaming OC",
+    "price_usd": 239.99,
+    "release_date": "2022-01-27",
+    "image_path": "gpu/3050_gamingoc.png",
+    "amazon_asin": "B09RDR8GIGA",
+    "spec": {
+      "vram_gb": 8,
+      "pcie_gen": "4.0 x8",
+      "boost_clock": "1822 MHz",
+      "tdp_w": 130,
+      "length_mm": 282,
+      "width_slots": 2
+    }
+  },
+  {
+    "id": "gpu_rx_7900xtx_xfx_merc",
+    "category": "gpu",
+    "brand": "XFX",
+    "model": "RX 7900 XTX Merc 310",
+    "price_usd": 1049.99,
+    "release_date": "2022-12-13",
+    "image_path": "gpu/7900xtx_merc.png",
+    "amazon_asin": "B0BNP6P4NP",
+    "spec": {
+      "vram_gb": 24,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2680 MHz",
+      "tdp_w": 355,
+      "length_mm": 340,
+      "width_slots": 3.5
+    }
+  },
+  {
+    "id": "gpu_rx_7700xt_gigabyte_gaming",
+    "category": "gpu",
+    "brand": "Gigabyte",
+    "model": "RX 7700 XT Gaming OC",
+    "price_usd": 449.99,
+    "release_date": "2023-09-06",
+    "image_path": "gpu/7700xt_gaming.png",
+    "amazon_asin": "B0CGU0RX77",
+    "spec": {
+      "vram_gb": 12,
+      "pcie_gen": "4.0 x16",
+      "boost_clock": "2599 MHz",
+      "tdp_w": 245,
+      "length_mm": 302,
+      "width_slots": 2.5
+    }
+  },
+  {
+    "id": "gpu_rx_7600_asus_dual",
+    "category": "gpu",
+    "brand": "ASUS",
+    "model": "Dual RX 7600",
+    "price_usd": 259.00,
+    "release_date": "2023-05-25",
+    "image_path": "gpu/7600_dual.png",
+    "amazon_asin": "B0C62W94G2",
+    "spec": {
+      "vram_gb": 8,
+      "pcie_gen": "4.0 x8",
+      "boost_clock": "2695 MHz",
+      "tdp_w": 165,
+      "length_mm": 227,
+      "width_slots": 2
+    }
+  },
+  {
+    "id": "cpu_i5_13600k",
+    "category": "cpu",
+    "brand": "Intel",
+    "model": "Core i5-13600K",
+    "price_usd": 319.99,
+    "release_date": "2022-10-20",
+    "image_path": "cpu/i5_13600k.png",
+    "amazon_asin": "B0BCFY6FDG",
+    "spec": {
+      "socket": "LGA1700",
+      "p_cores": 6,
+      "e_cores": 8,
+      "threads": 20,
+      "base_clock": "3.5 GHz",
+      "boost_clock": "5.1 GHz",
+      "cache_mb": 24,
+      "tdp_w": 125
+    }
+  },
+  {
+    "id": "cpu_i7_13700k",
+    "category": "cpu",
+    "brand": "Intel",
+    "model": "Core i7-13700K",
+    "price_usd": 409.99,
+    "release_date": "2022-10-20",
+    "image_path": "cpu/i7_13700k.png",
+    "amazon_asin": "B0BCFYM7M2",
+    "spec": {
+      "socket": "LGA1700",
+      "p_cores": 8,
+      "e_cores": 8,
+      "threads": 24,
+      "base_clock": "3.4 GHz",
+      "boost_clock": "5.4 GHz",
+      "cache_mb": 30,
+      "tdp_w": 125
+    }
+  },
+  {
+    "id": "cpu_i5_14600k",
+    "category": "cpu",
+    "brand": "Intel",
+    "model": "Core i5-14600K",
+    "price_usd": 329.99,
+    "release_date": "2023-10-17",
+    "image_path": "cpu/i5_14600k.png",
+    "amazon_asin": "B0CJC14600K",
+    "spec": {
+      "socket": "LGA1700",
+      "p_cores": 6,
+      "e_cores": 8,
+      "threads": 20,
+      "base_clock": "3.5 GHz",
+      "boost_clock": "5.3 GHz",
+      "cache_mb": 24,
+      "tdp_w": 125
+    }
+  },
+  {
+    "id": "cpu_i7_14700k",
+    "category": "cpu",
+    "brand": "Intel",
+    "model": "Core i7-14700K",
+    "price_usd": 439.99,
+    "release_date": "2023-10-17",
+    "image_path": "cpu/i7_14700k.png",
+    "amazon_asin": "B0CJCHH6L5",
+    "spec": {
+      "socket": "LGA1700",
+      "p_cores": 8,
+      "e_cores": 12,
+      "threads": 28,
+      "base_clock": "3.4 GHz",
+      "boost_clock": "5.6 GHz",
+      "cache_mb": 33,
+      "tdp_w": 125
+    }
+  },
+  {
+    "id": "cpu_ryzen_7600x",
+    "category": "cpu",
+    "brand": "AMD",
+    "model": "Ryzen 5 7600X",
+    "price_usd": 229.00,
+    "release_date": "2022-09-27",
+    "image_path": "cpu/ryzen_7600x.png",
+    "amazon_asin": "B0BBJDS256",
+    "spec": {
+      "socket": "AM5",
+      "cores": 6,
+      "threads": 12,
+      "base_clock": "4.7 GHz",
+      "boost_clock": "5.3 GHz",
+      "cache_mb": 38,
+      "tdp_w": 105
+    }
+  },
+  {
+    "id": "cpu_ryzen_7700x",
+    "category": "cpu",
+    "brand": "AMD",
+    "model": "Ryzen 7 7700X",
+    "price_usd": 329.00,
+    "release_date": "2022-09-27",
+    "image_path": "cpu/ryzen_7700x.png",
+    "amazon_asin": "B0BBJDS3P1",
+    "spec": {
+      "socket": "AM5",
+      "cores": 8,
+      "threads": 16,
+      "base_clock": "4.5 GHz",
+      "boost_clock": "5.4 GHz",
+      "cache_mb": 40,
+      "tdp_w": 105
+    }
+  },
+  {
+    "id": "cpu_ryzen_7800x3d",
+    "category": "cpu",
+    "brand": "AMD",
+    "model": "Ryzen 7 7800X3D",
+    "price_usd": 399.00,
+    "release_date": "2023-04-06",
+    "image_path": "cpu/ryzen_7800x3d.png",
+    "amazon_asin": "B0BTZ5MV73",
+    "spec": {
+      "socket": "AM5",
+      "cores": 8,
+      "threads": 16,
+      "base_clock": "4.2 GHz",
+      "boost_clock": "5.0 GHz",
+      "cache_mb": 104,
+      "tdp_w": 120
+    }
+  },
+  {
+    "id": "cpu_ryzen_7950x",
+    "category": "cpu",
+    "brand": "AMD",
+    "model": "Ryzen 9 7950X",
+    "price_usd": 549.00,
+    "release_date": "2022-09-27",
+    "image_path": "cpu/ryzen_7950x.png",
+    "amazon_asin": "B0BBHHPJ32",
+    "spec": {
+      "socket": "AM5",
+      "cores": 16,
+      "threads": 32,
+      "base_clock": "4.5 GHz",
+      "boost_clock": "5.7 GHz",
+      "cache_mb": 80,
+      "tdp_w": 170
+    }
+  },
+  {
+    "id": "cpu_ryzen_9600x",
+    "category": "cpu",
+    "brand": "AMD",
+    "model": "Ryzen 5 9600X",
+    "price_usd": 259.99,
+    "release_date": "2025-08-15",
+    "image_path": "cpu/ryzen_9600x.png",
+    "amazon_asin": "B0D9600XAMD",
+    "spec": {
+      "socket": "AM5",
+      "cores": 6,
+      "threads": 12,
+      "base_clock": "4.6 GHz",
+      "boost_clock": "5.4 GHz",
+      "cache_mb": 38,
+      "tdp_w": 120
+    }
+  },
+  {
+    "id": "cpu_ryzen_9700x",
+    "category": "cpu",
+    "brand": "AMD",
+    "model": "Ryzen 7 9700X",
+    "price_usd": 349.99,
+    "release_date": "2025-08-15",
+    "image_path": "cpu/ryzen_9700x.png",
+    "amazon_asin": "B0D9700XAMD",
+    "spec": {
+      "socket": "AM5",
+      "cores": 8,
+      "threads": 16,
+      "base_clock": "4.6 GHz",
+      "boost_clock": "5.8 GHz",
+      "cache_mb": 40,
+      "tdp_w": 120
+    }
+  },
+  {
+    "id": "cpu_ryzen_9900x",
+    "category": "cpu",
+    "brand": "AMD",
+    "model": "Ryzen 9 9900X",
+    "price_usd": 579.99,
+    "release_date": "2025-08-15",
+    "image_path": "cpu/ryzen_9900x.png",
+    "amazon_asin": "B0D9900XAMD",
+    "spec": {
+      "socket": "AM5",
+      "cores": 12,
+      "threads": 24,
+      "base_clock": "4.4 GHz",
+      "boost_clock": "5.9 GHz",
+      "cache_mb": 76,
+      "tdp_w": 170
+    }
+  },
+  {
+    "id": "cpu_ryzen_9950x",
+    "category": "cpu",
+    "brand": "AMD",
+    "model": "Ryzen 9 9950X",
+    "price_usd": 749.99,
+    "release_date": "2025-08-15",
+    "image_path": "cpu/ryzen_9950x.png",
+    "amazon_asin": "B0D9950XAMD",
+    "spec": {
+      "socket": "AM5",
+      "cores": 16,
+      "threads": 32,
+      "base_clock": "4.4 GHz",
+      "boost_clock": "6.0 GHz",
+      "cache_mb": 80,
+      "tdp_w": 170
+    }
+  },
+  {
+    "id": "mobo_asus_rog_z790e",
+    "category": "mobo",
+    "brand": "ASUS",
+    "model": "ROG Strix Z790-E Gaming WiFi",
+    "price_usd": 429.99,
+    "release_date": "2022-10-20",
+    "image_path": "mobo/z790_e.png",
+    "amazon_asin": "B0BG3Y5NCF",
+    "spec": {
+      "socket": "LGA1700",
+      "chipset": "Z790",
+      "form_factor": "ATX",
+      "memory_type": "DDR5",
+      "m2_slots": 5,
+      "usb_ports_rear": "USB-C 20 Gbps ×1, USB-A 10 Gbps ×7"
+    }
+  },
+  {
+    "id": "mobo_msi_z790_carbon",
+    "category": "mobo",
+    "brand": "MSI",
+    "model": "MPG Z790 Carbon WiFi",
+    "price_usd": 399.99,
+    "release_date": "2022-10-20",
+    "image_path": "mobo/z790_carbon.png",
+    "amazon_asin": "B0BDWQV535",
+    "spec": {
+      "socket": "LGA1700",
+      "chipset": "Z790",
+      "form_factor": "ATX",
+      "memory_type": "DDR5",
+      "m2_slots": 5,
+      "usb_ports_rear": "USB-C 20 Gbps ×1, USB-A 10 Gbps ×6"
+    }
+  },
+  {
+    "id": "mobo_asus_z890_hero",
+    "category": "mobo",
+    "brand": "ASUS",
+    "model": "ROG Maximus Z890 Hero",
+    "price_usd": 599.99,
+    "release_date": "2025-09-10",
+    "image_path": "mobo/z890_hero.png",
+    "amazon_asin": "B0DZ890HERO",
+    "spec": {
+      "socket": "LGA1851",
+      "chipset": "Z890",
+      "form_factor": "ATX",
+      "memory_type": "DDR5",
+      "m2_slots": 6,
+      "usb_ports_rear": "USB-C 40 Gbps ×2, USB-A 10 Gbps ×8"
+    }
+  },
+  {
+    "id": "mobo_msi_z890_edge",
+    "category": "mobo",
+    "brand": "MSI",
+    "model": "MPG Z890 Edge WiFi",
+    "price_usd": 329.99,
+    "release_date": "2025-09-10",
+    "image_path": "mobo/z890_edge.png",
+    "amazon_asin": "B0DZ890EDGE",
+    "spec": {
+      "socket": "LGA1851",
+      "chipset": "Z890",
+      "form_factor": "ATX",
+      "memory_type": "DDR5",
+      "m2_slots": 5,
+      "usb_ports_rear": "USB-C 20 Gbps ×1, USB-A 10 Gbps ×6"
+    }
+  },
+  {
+    "id": "mobo_msi_x670e_carbon",
+    "category": "mobo",
+    "brand": "MSI",
+    "model": "MPG X670E Carbon WiFi",
+    "price_usd": 399.99,
+    "release_date": "2022-09-27",
+    "image_path": "mobo/x670e_carbon.png",
+    "amazon_asin": "B0B8QDGBVG",
+    "spec": {
+      "socket": "AM5",
+      "chipset": "X670E",
+      "form_factor": "ATX",
+      "memory_type": "DDR5",
+      "m2_slots": 4,
+      "usb_ports_rear": "USB-C 20 Gbps ×1, USB-A 10 Gbps ×7"
+    }
+  },
+  {
+    "id": "mobo_asus_tuf_x670e_plus",
+    "category": "mobo",
+    "brand": "ASUS",
+    "model": "TUF Gaming X670E-Plus WiFi",
+    "price_usd": 299.99,
+    "release_date": "2022-09-27",
+    "image_path": "mobo/x670e_plus.png",
+    "amazon_asin": "B0B86L7WY4",
+    "spec": {
+      "socket": "AM5",
+      "chipset": "X670E",
+      "form_factor": "ATX",
+      "memory_type": "DDR5",
+      "m2_slots": 4,
+      "usb_ports_rear": "USB-C 20 Gbps ×1, USB-A 10 Gbps ×6"
+    }
+  },
+  {
+    "id": "mobo_msi_x870_tomahawk",
+    "category": "mobo",
+    "brand": "MSI",
+    "model": "MAG X870 Tomahawk WiFi",
+    "price_usd": 299.99,
+    "release_date": "2025-08-25",
+    "image_path": "mobo/x870_tomahawk.png",
+    "amazon_asin": "B0DX870TOMA",
+    "spec": {
+      "socket": "AM5",
+      "chipset": "X870",
+      "form_factor": "ATX",
+      "memory_type": "DDR5",
+      "m2_slots": 5,
+      "usb_ports_rear": "USB-C 20 Gbps ×1, USB-A 10 Gbps ×6"
+    }
+  },
+  {
+    "id": "cooler_noctua_nhd15",
+    "category": "cooler",
+    "brand": "Noctua",
+    "model": "NH-D15 Chromax.black",
+    "price_usd": 109.95,
+    "release_date": "2020-01-28",
+    "image_path": "cooler/nhd15.png",
+    "amazon_asin": "B07Y87YHRH",
+    "spec": {
+      "type": "Air",
+      "height_mm": 165,
+      "socket": [
+        "AM5",
+        "LGA1851",
+        "LGA1700",
+        "AM4"
+      ],
+      "tdp_w": 250
+    }
+  },
+  {
+    "id": "cooler_deepcool_ak620",
+    "category": "cooler",
+    "brand": "DeepCool",
+    "model": "AK620 Zero Dark",
+    "price_usd": 74.99,
+    "release_date": "2022-06-15",
+    "image_path": "cooler/ak620.png",
+    "amazon_asin": "B09XJ2XY4D",
+    "spec": {
+      "type": "Air",
+      "height_mm": 160,
+      "socket": [
+        "AM5",
+        "LGA1851",
+        "LGA1700",
+        "AM4"
+      ],
+      "tdp_w": 260
+    }
+  },
+  {
+    "id": "cooler_corsair_h150i_xt",
+    "category": "cooler",
+    "brand": "Corsair",
+    "model": "iCUE H150i Elite Capellix XT",
+    "price_usd": 209.99,
+    "release_date": "2023-02-15",
+    "image_path": "cooler/h150i_xt.png",
+    "amazon_asin": "B0BVKM6XXZ",
+    "spec": {
+      "type": "AIO Liquid",
+      "radiator_mm": 360,
+      "socket": [
+        "AM5",
+        "LGA1851",
+        "LGA1700",
+        "AM4"
+      ],
+      "tdp_w": 300
+    }
+  },
+  {
+    "id": "cooler_ek_nucleus_360",
+    "category": "cooler",
+    "brand": "EK",
+    "model": "Nucleus CR360 Lux D-RGB",
+    "price_usd": 229.99,
+    "release_date": "2024-02-01",
+    "image_path": "cooler/ek_nucleus_360.png",
+    "amazon_asin": "B0CEKN360RGB",
+    "spec": {
+      "type": "AIO Liquid",
+      "radiator_mm": 360,
+      "socket": [
+        "AM5",
+        "LGA1851",
+        "LGA1700",
+        "AM4"
+      ],
+      "tdp_w": 350
+    }
+  },
+  {
+    "id": "cooler_arctic_lf2_280",
+    "category": "cooler",
+    "brand": "Arctic",
+    "model": "Liquid Freezer II 280",
+    "price_usd": 109.99,
+    "release_date": "2020-05-01",
+    "image_path": "cooler/lf2_280.png",
+    "amazon_asin": "B085T7FJ91",
+    "spec": {
+      "type": "AIO Liquid",
+      "radiator_mm": 280,
+      "socket": [
+        "AM5",
+        "LGA1851",
+        "LGA1700",
+        "AM4"
+      ],
+      "tdp_w": 300
+    }
+  },
+  {
+    "id": "cooler_noctua_nhd15_classic",
+    "category": "cooler",
+    "brand": "Noctua",
+    "model": "NH-D15",
+    "price_usd": 109.95,
+    "release_year": 2020,
+    "amazon_asin": "B07Y8TLKH4",
+    "image_path": "cooler/noctua.png",
+    "spec": {
+      "type": "Air",
+      "socket": ["AM5", "LGA1700", "AM4"],
+      "height_mm": 165
+    }
+  },
+  {
+    "id": "cooler_corsair_h150i_capellix_xt_360",
+    "category": "cooler",
+    "brand": "Corsair",
+    "model": "iCUE H150i ELITE CAPELLIX XT 360mm",
+    "price_usd": 189.99,
+    "release_year": 2024,
+    "amazon_asin": "B0C2SXYR76",
+    "image_path": "cooler/corsair_h150i.png",
+    "spec": {
+      "type": "AIO Liquid",
+      "radiator_mm": 360,
+      "socket": ["AM5", "LGA1700", "AM4"]
+    }
+  },
+
+  {
+    "id": "memory_corsair_vengeance_ddr5_32gb_6000",
+    "category": "memory",
+    "brand": "Corsair",
+    "model": "Vengeance DDR5 32GB (2×16 GB) 6000",
+    "price_usd": 114.99,
+    "release_year": 2023,
+    "amazon_asin": "B09V3KRZ1S",
+    "image_path": "memory/corsair_vengeance_rgb.png",
+    "spec": {
+      "type": "DDR5",
+      "capacity_gb": 32,
+      "speed": "6000 MT/s"
+    }
+  },
+  {
+    "id": "memory_gskill_tridentz5_ddr5_32gb_6000",
+    "category": "memory",
+    "brand": "G.Skill",
+    "model": "Trident Z5 RGB DDR5 32GB 6000",
+    "price_usd": 129.99,
+    "release_year": 2023,
+    "amazon_asin": "B09Y1CZXHD",
+    "image_path": "memory/trident_z5.png",
+    "spec": {
+      "type": "DDR5",
+      "capacity_gb": 32,
+      "speed": "6000 MT/s"
+    }
+  },
+  {
+    "id": "memory_kingston_fury_beast_ddr5_32gb_5600",
+    "category": "memory",
+    "brand": "Kingston",
+    "model": "FURY Beast DDR5 32GB 5600",
+    "price_usd": 109.99,
+    "release_year": 2023,
+    "amazon_asin": "B09SW6TZX3",
+    "image_path": "memory/Kingston_Fury_Beast_RGB.png.webp",
+    "spec": {
+      "type": "DDR5",
+      "capacity_gb": 32,
+      "speed": "5600 MT/s"
+    }
+  },
+  {
+    "id": "memory_corsair_vengeance_lpx_ddr4_16gb_3200",
+    "category": "memory",
+    "brand": "Corsair",
+    "model": "Vengeance LPX DDR4 16GB 3200",
+    "price_usd": 44.99,
+    "release_year": 2020,
+    "amazon_asin": "B0143UM4TC",
+    "image_path": "memory/Vengeance_LPX-16GB.png.webp",
+    "spec": {
+      "type": "DDR4",
+      "capacity_gb": 16,
+      "speed": "3200 MT/s"
+    }
+  },
+
+  {
+    "id": "storage_samsung_990pro_1tb",
+    "category": "storage",
+    "brand": "Samsung",
+    "model": "990 PRO 1TB NVMe",
+    "price_usd": 119.99,
+    "release_year": 2023,
+    "amazon_asin": "B0BQNDSTJX",
+    "image_path": "storage/samsung_990_pro.webp",
+    "spec": {
+      "type": "NVMe",
+      "capacity_gb": 1024,
+      "read": "7450 MB/s"
+    }
+  },
+  {
+    "id": "storage_wd_sn850x_2tb",
+    "category": "storage",
+    "brand": "WD",
+    "model": "Black SN850X 2TB NVMe",
+    "price_usd": 189.99,
+    "release_year": 2022,
+    "amazon_asin": "B0B7C9H2Y2",
+    "image_path": "storage/wd_black_sn850x.png",
+    "spec": {
+      "type": "NVMe",
+      "capacity_gb": 2048,
+      "read": "7300 MB/s"
+    }
+  },
+  {
+    "id": "storage_crucial_p5plus_1tb",
+    "category": "storage",
+    "brand": "Crucial",
+    "model": "P5 Plus 1TB NVMe",
+    "price_usd": 79.99,
+    "release_year": 2022,
+    "amazon_asin": "B09B1F9152",
+    "image_path": "storage/crucial_p5.avif",
+    "spec": {
+      "type": "NVMe",
+      "capacity_gb": 1024,
+      "read": "6600 MB/s"
+    }
+  },
+
+  {
+    "id": "case_lianli_o11d_evo",
+    "category": "case",
+    "brand": "Lian Li",
+    "model": "PC-O11 Dynamic EVO",
+    "price_usd": 169.99,
+    "release_year": 2022,
+    "amazon_asin": "B09MVZ8421",
+    "image_path": "case/lian_li.png",
+    "spec": {
+      "form_factor": "ATX Mid-tower",
+      "color": "Black"
+    }
+  },
+  {
+    "id": "case_nzxt_h7_flow_white",
+    "category": "case",
+    "brand": "NZXT",
+    "model": "H7 Flow",
+    "price_usd": 129.99,
+    "release_year": 2022,
+    "amazon_asin": "B09XT3GPLK",
+    "image_path": "case/h7_flow.webp",
+    "spec": {
+      "form_factor": "ATX Mid-tower",
+      "color": "White"
+    }
+  },
+  {
+    "id": "case_fractal_meshify2_compact",
+    "category": "case",
+    "brand": "Fractal",
+    "model": "Meshify 2 Compact",
+    "price_usd": 129.99,
+    "release_year": 2021,
+    "amazon_asin": "B08MWZHH4T",
+    "image_path": "case/fractal.png",
+    "spec": {
+      "form_factor": "ATX Mid-tower",
+      "color": "Black"
+    }
+  },
+
+  {
+    "id": "psu_corsair_rm850e_atx3",
+    "category": "psu",
+    "brand": "Corsair",
+    "model": "RM850e ATX 3.0 80+ Gold",
+    "price_usd": 149.99,
+    "release_year": 2023,
+    "amazon_asin": "B0BY3FV876",
+    "image_path": "psu/rm850e.webp",
+    "spec": {
+      "wattage": 850,
+      "efficiency": "Gold",
+      "modular": true
+    }
+  },
+  {
+    "id": "psu_evga_supernova_750gt",
+    "category": "psu",
+    "brand": "EVGA",
+    "model": "SuperNOVA 750 GT 80+ Gold",
+    "price_usd": 119.99,
+    "release_year": 2021,
+    "amazon_asin": "B08J381K6D",
+    "image_path": "psu/750_gt.png",
+    "spec": {
+      "wattage": 750,
+      "efficiency": "Gold",
+      "modular": true
+    }
+  },
+  {
+    "id": "psu_seasonic_focus_gx_1000",
+    "category": "psu",
+    "brand": "Seasonic",
+    "model": "FOCUS GX-1000 80+ Gold",
+    "price_usd": 189.99,
+    "release_year": 2020,
+    "amazon_asin": "B07JLF2JFW",
+    "image_path": "psu/gx_1000.png",
+    "spec": {
+      "wattage": 1000,
+      "efficiency": "Gold",
+      "modular": true
+    }
+  },
+  {
+    "id": "gear_logi_g502x",
+    "category": "accessories",
+    "brand": "Logitech",
+    "model": "G502 X PLUS Wireless Mouse",
+    "price_usd": 159.99,
+    "release_date": "2022-09-20",
+    "image_path": "accessories/g502x.png",
+    "spec": {
+      "sensor": "Hero 25K",
+      "weight_g": 106
+    }
+  }
+]
+

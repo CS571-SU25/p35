@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "resolveJsonModule": true,
+    "strict": true
+  },
+  // tell ts-node to activate its ESM loader automatically
+  "ts-node": { "esm": true },
+  "include": ["importSeed.ts"]
+}

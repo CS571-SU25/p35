@@ -1,0 +1,86 @@
+[
+  {
+    "id": "cpu_i5_13600k",
+    "cinebench_r23_single": 1998,
+    "cinebench_r23_multi":  23396,
+    "cinebench_r24_single": 118,
+    "cinebench_r24_multi":  1258
+  },
+  {
+    "id": "cpu_i5_14600k",
+    "cinebench_r23_single": 2072,
+    "cinebench_r23_multi":  25270,
+    "cinebench_r24_single": 113,
+    "cinebench_r24_multi":  1347
+  },
+  {
+    "id": "cpu_i7_13700k",
+    "cinebench_r23_single": 2082,
+    "cinebench_r23_multi":  30468,
+    "cinebench_r24_single": 121,
+    "cinebench_r24_multi":  1601
+  },
+  {
+    "id": "cpu_i7_14700k",
+    "cinebench_r23_single": 2072,
+    "cinebench_r23_multi":  34895,
+    "cinebench_r24_single": 124,
+    "cinebench_r24_multi":  1831
+  },
+  {
+    "id": "cpu_ryzen_7600x",
+    "cinebench_r23_single": 1951,
+    "cinebench_r23_multi":  15210,
+    "cinebench_r24_single": 115,
+    "cinebench_r24_multi":  1831
+  },
+  {
+    "id": "cpu_ryzen_7700x",
+    "cinebench_r23_single": 2006,
+    "cinebench_r23_multi":  19872,
+    "cinebench_r24_single": 117,
+    "cinebench_r24_multi":  1106
+  },
+  {
+    "id": "cpu_ryzen_7800x3d",
+    "cinebench_r23_single": 1785,
+    "cinebench_r23_multi":  18193,
+    "cinebench_r24_single": 110,
+    "cinebench_r24_multi":  1068
+  },
+  {
+    "id": "cpu_ryzen_7950x",
+    "cinebench_r23_single": 2009,
+    "cinebench_r23_multi":  36742,
+    "cinebench_r24_single": 120,
+    "cinebench_r24_multi":  2077
+  },
+  {
+    "id": "cpu_ryzen_9600x",
+    "cinebench_r23_single": 2154,
+    "cinebench_r23_multi":  17447,
+    "cinebench_r24_single": 134,
+    "cinebench_r24_multi":  1021
+  },
+  {
+    "id": "cpu_ryzen_9700x",
+    "cinebench_r23_single": 2213,
+    "cinebench_r23_multi":  20228,
+    "cinebench_r24_single": 138,
+    "cinebench_r24_multi":  1299
+  },
+  {
+    "id": "cpu_ryzen_9900x",
+    "cinebench_r23_single": 2232,
+    "cinebench_r23_multi":  33042,
+    "cinebench_r24_single": 135,
+    "cinebench_r24_multi":  1830
+  },
+  {
+    "id": "cpu_ryzen_9950x",
+    "cinebench_r23_single": 2243,
+    "cinebench_r23_multi":  42103,
+    "cinebench_r24_single": 137,
+    "cinebench_r24_multi":  2297
+  }
+]

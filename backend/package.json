@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "import-seed": "node --loader ts-node/esm importSeed.ts",
+    "update-prices": "node --loader ts-node/esm updatePrices.ts",
+    "import-benchmarks": "node --loader ts-node/esm importBenchmarks.ts",
+    "bench:skeleton": "node --loader ts-node/esm ./tools/genBenchSkeleton.ts",
+    "gen:cpu-bench": "node --experimental-vm-modules --no-warnings --loader ts-node/esm ./tools/genCpuBenchSkeleton.ts",
+    "seed:cpubenchmarks": "tsx seedCpuBenchmarks.ts"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.50.2",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^16.4.5",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.13",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
