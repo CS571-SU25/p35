@@ -1,31 +1,20 @@
-/*  src/features/builder/steps/AccessoriesStep.tsx  */
-import { Suspense, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
-
+import { Suspense } from "react";
 import { PartGrid } from "../components/PartGrid";
 import { useBuildStore } from "@/stores/buildStore";
-import { nextStep } from "../builderSteps";
-
-/* -------------------------------------------------------------------------- */
-/*  UI                                                                        */
-/* -------------------------------------------------------------------------- */
 
 export default function AccessoriesStep() {
-  const navigate       = useNavigate();
-  const selectedId     = useBuildStore((s) => s.selected.accessories?.id);
-
-  /* auto-advance once an accessory is chosen */
-  useEffect(() => {
-    if (selectedId) navigate(`/builder/${nextStep("accessories")}`);
-  }, [selectedId, navigate]);
+  const activeId = useBuildStore((s) => s.active.accessories);
 
   return (
-    <Suspense fallback={<p className="p-6">Loading accessories…</p>}>
-      <div className="flex flex-1 flex-col overflow-hidden bg-off-black">
-        <h2 className="mb-4 text-2xl font-semibold">Accessories</h2>
-
-        {/* Pass only the props PartGrid expects */}
-        <PartGrid category="accessories" selectedId={selectedId} />
+    <Suspense fallback={<p className="p-6">Loading Accessories…</p>}>
+      <div className="flex-1 flex flex-col overflow-hidden bg-off-black">
+        <h2 className="text-2xl font-semibold mb-4">Accessories</h2>
+        <div className="flex-1 overflow-y-auto">
+          <PartGrid
+            category="accessories"
+            selectedId={activeId ?? undefined}
+          />
+        </div>
       </div>
     </Suspense>
   );

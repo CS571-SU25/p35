@@ -1,4 +1,6 @@
 import type { Part } from "@/lib/types";
+import { imageUrl } from "@/lib/images";
+import { Skeleton } from "@/components/ui/skeleton";
 
 /* -------------------------------------------------------------------------- */
 /*  Per-category sort order                                                   */
@@ -28,7 +30,7 @@ const Row = ({ k, v }: { k: string; v: string | number | undefined }) => (
   <>
     <dt className="text-[13px] text-gray-400">{pretty(k)}</dt>
     <dd className="text-right text-[13px] font-medium tabular-nums text-gray-200">
-      {v}
+      {v ?? "—"}
     </dd>
   </>
 );
@@ -48,10 +50,26 @@ export default function SpecsGrid({ part }: { part: Part }) {
   });
 
   return (
-    <dl className="grid grid-cols-[auto_1fr] gap-y-1">
-      {sorted.map(([k, v]) => (
-        <Row key={k} k={k} v={v} />
-      ))}
-    </dl>
+    <div className="flex flex-col gap-6 md:flex-row">
+      {/* specs table (left) */}
+      <dl className="grid flex-1 grid-cols-[auto_1fr] gap-y-1 md:max-w-sm">
+        {sorted.map(([k, v]) => (
+          <Row key={k} k={k} v={v} />
+        ))}
+      </dl>
+
+      {/* product image (right) */}
+      <div className="flex flex-1 items-center justify-center">
+        {part.image_path ? (
+          <img
+            src={imageUrl(part.image_path)}
+            alt={part.model}
+            className="max-h-56 w-auto object-contain"
+          />
+        ) : (
+          <Skeleton className="h-48 w-48" />
+        )}
+      </div>
+    </div>
   );
 }

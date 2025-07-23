@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClearWire</title>
+    <link rel="stylesheet" href="../../src/routes/landing.css" />
+
+    <!-- Polyfill so Safari/old browsers understand import maps -->
+    <script async src="https://unpkg.com/es-module-shims@1.9.0/dist/es-module-shims.js"></script>
+
+    <!-- Import map: bare imports used in script.js -->
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://unpkg.com/three@0.164.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.164.0/examples/jsm/",
+            "gsap": "https://cdn.skypack.dev/gsap@3.12.5",
+            "gsap/ScrollTrigger": "https://cdn.skypack.dev/gsap@3.12.5/ScrollTrigger",
+            "@studio-freight/lenis": "https://esm.sh/@studio-freight/lenis@1.0.27"
+          }
+        }
+    </script>
+
+    <!-- Ionicons for <ion-icon> elements -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+<section class="intro">
+    <h1>Build the PC You Actually Need.</h1>
+</section>
+
+<section class="product-overview">
+    <div class="header-1"><h1>Every Great Rig Starts Here</h1></div>
+    <div class="header-2"><h2>The ClearWire Builder</h2></div>
+
+    <div class="circular-mask"></div>
+
+    <div class="tooltips">
+        <div class="tooltip">
+            <div class="icon"><ion-icon name="flash"></ion-icon></div>
+            <div class="divider"></div>
+            <div class="title"><h2>Zero Guesswork Pricing</h2></div>
+            <div class="description">
+                <p>Every component, cost, and lead time is itemized. No hidden markups—ever.</p>
+            </div>
+        </div>
+
+        <div class="tooltip">
+            <div class="icon"><ion-icon name="flash"></ion-icon></div>
+            <div class="divider"></div>
+            <div class="title"><h2>Support That Knows Hardware</h2></div>
+            <div class="description">
+                <p>Real builders, real answers. Need an upgrade plan? We’ve got you covered.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="model-container">
+        <canvas id="scene"></canvas>
+    </div>
+</section>
+
+<section class="outro">
+    <h1>Ready to build yours?</h1>
+    <p class="outro-sub">Spec it, price it, and build it — no guesswork.</p>
+    <a id="launch-builder" href="#" class="btn-primary">Launch Builder</a>
+</section>
+
+<!-- Your landing JS (uses the import map above) -->
+<script type="module" src="./script.js"></script>
+
+<!-- Resolve base path and navigate to the SPA -->
+<script>
+    (function () {
+        const btn = document.getElementById("launch-builder");
+        if (!btn) return;
+
+        const path = window.location.pathname;
+        // Strip ".../landing/..." and leave the base prefix (e.g. "/" or "/p35/")
+        const base = path.replace(/\/landing\/?.*$/, "/");
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            window.location.href = base + "builder";
+        });
+    })();
+</script>
+</body>
+</html>

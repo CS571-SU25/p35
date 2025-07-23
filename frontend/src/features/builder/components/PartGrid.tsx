@@ -1,19 +1,25 @@
-// src/components/PartGrid.tsx
-import { Fragment, useState } from "react";
+import { Fragment, useState, type MouseEvent } from "react";
+import { flyTo } from "@/lib/flyTo";
 import { useQuery } from "@tanstack/react-query";
-import { toast } from "sonner";
+import confetti from "canvas-confetti";
+import { useNavigate } from "react-router-dom";
 import { supabase } from "@/lib/supabase";
-import { useBuildStore } from "@/stores/buildStore";
+
+import {
+  useBuildStore,
+  type Category,
+} from "@/stores/buildStore";
+
 import { PartCard } from "./PartCard";
 import PartDetailsModal from "@/features/builder/components/PartDetailsModal";
+import { showPartAddedToast } from "@/lib/showPartAddedToast";
+import { toast } from "sonner";
+import { nextStep } from "../builderSteps";
 import type { Part } from "@/lib/types";
 
-interface Props {
-  category: string;
-  selectedId?: string;
-}
-
-/* helper groups ----------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*  helper to bucket parts by brand / type                                    */
+/* -------------------------------------------------------------------------- */
 function bucketKey(p: Part): string {
   switch (p.category) {
     case "gpu":
@@ -29,14 +35,28 @@ function bucketKey(p: Part): string {
   }
 }
 
-export function PartGrid({ category, selectedId }: Props) {
-  const setPart = useBuildStore((s) => s.setPart);
+/* -------------------------------------------------------------------------- */
+interface Props {
+  category: Category;
+  selectedId?: string;
+}
+/* -------------------------------------------------------------------------- */
 
-  /* modal state */
-  const [modalOpen, setModalOpen] = useState(false);
-  const [modalPart, setModalPart] = useState<Part | null>(null);
+export function PartGrid({ category }: Props) {
+  /* store actions & state -------------------------------------------------- */
+  const addCandidate    = useBuildStore((s) => s.addCandidate);
+  const removeCandidate = useBuildStore((s) => s.removeCandidate);
+  const setActive       = useBuildStore((s) => s.setActive);
+  const candidates      = useBuildStore((s) => s.candidates);
+  const active          = useBuildStore((s) => s.active);
 
-  /* data fetch ----------------------------------------------------------- */
+  const navigate = useNavigate();
+
+  /* modal state ------------------------------------------------------------ */
+  const [modalOpen, setModalOpen]   = useState(false);
+  const [modalPart, setModalPart]   = useState<Part | null>(null);
+
+  /* fetch parts ------------------------------------------------------------ */
   const { data, isLoading, error } = useQuery<Part[], Error>({
     queryKey: ["parts", category],
     queryFn: async () => {
@@ -53,64 +73,117 @@ export function PartGrid({ category, selectedId }: Props) {
   if (error)         return <p className="p-4 text-destructive">Error loading parts</p>;
   if (!data?.length) return <p className="p-4">No parts found</p>;
 
-  /* bucket parts */
+  /* bucket parts ----------------------------------------------------------- */
   const buckets: Record<string, Part[]> = {};
   for (const p of data) (buckets[bucketKey(p)] ??= []).push(p);
 
+  /* ----------------------------------------------------------------------- */
+  /*  micro‑interactions                                                    */
+  /* ----------------------------------------------------------------------- */
+
+  /** confetti burst for successful add */
+  function fireConfetti(e: MouseEvent, colors: string[]) {
+    const { clientX, clientY } = e;
+    confetti({
+      particleCount: 40,
+      spread: 60,
+      scalar: 0.8,
+      colors,
+      origin: {
+        x: clientX / window.innerWidth,
+        y: clientY / window.innerHeight,
+      },
+    });
+  }
+
+  /** flame emoji that rises & fades when removing */
+  function fireFlame(e: MouseEvent) {
+    const { clientX, clientY } = e;
+    const flame = document.createElement("span");
+    flame.textContent = "🔥";
+    flame.style.position = "fixed";
+    flame.style.pointerEvents = "none";
+    flame.style.left = `${clientX - 12}px`;
+    flame.style.top = `${clientY - 12}px`;
+    flame.style.fontSize = "24px";
+    flame.style.opacity = "1";
+    flame.style.transform = "translateY(0px) scale(1)";
+    flame.style.transition = "transform 0.6s ease-out, opacity 0.6s ease-out";
+    document.body.appendChild(flame);
+    requestAnimationFrame(() => {
+      flame.style.transform = "translateY(-40px) scale(1.4)";
+      flame.style.opacity = "0";
+    });
+    setTimeout(() => flame.remove(), 600);
+  }
+
+  /* ----------------------------------------------------------------------- */
   return (
-    <div className="h-full overflow-y-auto pb-28 pr-6">
+    <div className="h-full overflow-y-auto pb-28 pr-6 p-4 space-y-4">
       {Object.entries(buckets).map(([label, parts]) => (
         <Fragment key={label}>
           {label !== "all" && (
-            <h3 className="sticky top-0 z-10 mb-2 bg-off-black/90 py-1 text-lg font-semibold backdrop-blur">
+            <h3 className="sticky top-0 z-10 mb-3 bg-off-black/90 py-1 text-lg font-semibold backdrop-blur">
               {label}
             </h3>
           )}
 
           <div className="
-          grid auto-rows-[16rem] gap-4
+            grid gap-x-4 gap-y-6
+            auto-rows-[minmax(0,256px)]
+            grid-cols-[repeat(auto-fill,minmax(208px,1fr))]
+          ">
+            {parts.map((p, idx) => {
+              const isCand = candidates[category].some((x) => x.id === p.id);
+              const isAct  = active[category] === p.id;
 
-          /* phones */
-            grid-cols-[repeat(auto-fit,minmax(150px,1fr))]
+              return (
+                <PartCard
+                  key={`${p.id}-${idx}`}
+                  part={p}
+                  isCandidate={isCand}
+                  isActive={isAct}
+                  onAdd={(e, part) => {
 
-          /* sm ≥ 640px */
-            sm:grid-cols-[repeat(auto-fit,minmax(180px,1fr))]
+                    // Fly in feature
+                    const cardEl   = (e.currentTarget as HTMLElement).closest("[data-card]");
+                    const padEl    = document.querySelector(
+                      `[data-budget-pad='${category}']`
+                      ) as HTMLElement | null;
+                    if (cardEl && padEl) flyTo(cardEl as HTMLElement, padEl);
 
-          /* md ≥ 768px  → 3-up after 240-px sidebar */
-            md:grid-cols-[repeat(auto-fit,minmax(170px,1fr))]
+                    addCandidate(category, part);
+                    setActive(category, part.id);
 
-          /* lg ≥ 1024px  → maybe 4-up, still shrink before wrap */
-            lg:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]
-
-          /* xl ≥ 1280px  → cap growth to avoid billboards */
-            xl:grid-cols-[repeat(auto-fit,minmax(235px,260px))]
-          "
-          >
-            {parts.map((p) => (
-              <PartCard
-                key={p.id}
-                part={p}
-                selected={p.id === selectedId}
-                onOpenDetails={(choice) => {
-                  setModalPart(choice);
-                  setModalOpen(true);
-                }}
-              />
-            ))}
+                    fireConfetti(e, ["#22c55e", "#bef264"]);
+                    showPartAddedToast(
+                      `${part.brand} ${part.model}`,
+                      nextStep(category as any).toUpperCase(),
+                      () => navigate(`/builder/${nextStep(category as any)}`)
+                    );
+                  }}
+                  onRemove={(e, id) => {
+                    removeCandidate(category, id);
+                    fireFlame(e);
+                    toast.success("Removed from build");
+                  }}
+                  onOpenDetails={(choice) => {
+                    setModalPart(choice);
+                    setModalOpen(true);
+                  }}
+                />
+              );
+            })}
           </div>
         </Fragment>
       ))}
 
-      {/* modal renders once per grid */}
+      {/* modal ------------------------------------------------------------ */}
       {modalPart && (
         <PartDetailsModal
           part={modalPart}
           open={modalOpen}
           onOpenChange={setModalOpen}
-          onAdd={(chosen) => {
-            setPart(category as any, chosen);
-            toast.success(`Added ${chosen.brand} ${chosen.model} to build`);
-          }}
         />
       )}
     </div>
